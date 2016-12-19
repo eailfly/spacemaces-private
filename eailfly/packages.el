@@ -31,17 +31,27 @@
 
 (setq eailfly-packages
       '(
-        ;; chinese-pyim-greatdict
+        chinese-pyim-greatdict
         quickrun
+        chinese-fonts-setup
+        ox-rst
         )
 )
 
-;; (defun eailfly/init-chinese-pyim-greatdict()
-;;   (use-package chinese-pyim-greatdict)
-;;   (chinese-pyim-greatdict-enable)
-;;   )
+(defun eailfly/init-chinese-pyim-greatdict()
+  (use-package chinese-pyim-greatdict)
+  (chinese-pyim-greatdict-enable)
+  )
 
 (defun eailfly/init-quickrun()
   (use-package quickrun))
+
+(defun eailfly/init-chinese-fonts-setup()
+  (use-package chinese-fonts-setup)
+  (chinese-fonts-setup-enable)
+  )
+
+(defun eailfly/init-ox-rst()
+  (use-package ox-rst))
 
 ;;; packages.el ends here
