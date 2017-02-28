@@ -31,17 +31,11 @@
 
 (setq eailfly-packages
       '(
-        chinese-pyim-greatdict
         quickrun
         chinese-fonts-setup
         ox-rst
         )
 )
-
-(defun eailfly/init-chinese-pyim-greatdict()
-  (use-package chinese-pyim-greatdict)
-  (chinese-pyim-greatdict-enable)
-  )
 
 (defun eailfly/init-quickrun()
   (use-package quickrun))
