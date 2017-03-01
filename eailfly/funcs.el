@@ -8,3 +8,8 @@
                   ,(rx (or "}" "]" "end"))                       ; Block end
                   ,(rx (or "#" "=begin"))                        ; Comment start
                   ruby-forward-sexp nil)))
+
+
+(defun hexo-my-blog ()
+  (interactive)
+  (hexo "~/git/eailfly.github.com/"))
