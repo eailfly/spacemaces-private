@@ -34,6 +34,11 @@
         ;; chinese-pyim-greatdict
         ;; quickrun
         chinese-fonts-setup
+        quickrun
+        (hexo :location(recipe
+                        :fetcher github
+                        :repo "kuanyui/hexo.el"
+                        ))
         ox-rst
         )
 )
@@ -46,12 +51,16 @@
 ;; (defun eailfly/init-quickrun()
 ;;   (use-package quickrun))
 
-(defun eailfly/init-chinese-fonts-setup()
-  (use-package chinese-fonts-setup)
-  (chinese-fonts-setup-enable)
-  )
+;;(defun eailfly/init-chinese-fonts-setup()
+;;  (use-package chinese-fonts-setup)
+;;  (chinese-fonts-setup-enable)
+;;  )
 
 (defun eailfly/init-ox-rst()
   (use-package ox-rst))
+
+(defun eailfly/init-hexo()
+  (use-package hexo))
+
 
 ;;; packages.el ends here
